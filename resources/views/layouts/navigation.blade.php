@@ -20,7 +20,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{ route('home') }}" class="nav-link">
+                <a href="{{ route('jamaah.index') }}" class="nav-link active">
                     <i class="nav-icon fas fa-users"></i>
                     <p>
                         {{ __('Jamaah') }}

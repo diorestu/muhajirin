@@ -79,31 +79,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">{{ __('Data Admin Sistem') }}</h1>
-                </div>
-            </div>
-            <div class="d-flex justify-content-between align-items-center mb-0">
-                <div id="left" class="d-flex justify-content-start align-items-center mb-0">
-                    <div class="form-group mb-0">
-                        <select type="text" class="form-control form-select" id="search" name="cari"
-                            placeholder="Cari disini...">
-                            <option selected disabled>Kemampuan Harta</option>
-                        </select>
-                    </div>
-                    <div class="form-group mb-0 ml-2">
-                        <select type="text" class="form-control form-select" id="search" name="cari"
-                            placeholder="Cari disini...">
-                            <option selected disabled>Status Yatim</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div id="right" class="d-flex justify-content-end align-items-center mb-0">
-                    <a href="{{ route('jamaah.create') }}" class="btn btn-success mr-2 shadow">Add Data</a>
-                    <div class="form-group mb-0">
-                        <input type="text" class="form-control" id="search" name="cari"
-                            placeholder="Cari disini...">
-                    </div>
+                    <h1 class="m-0">{{ __('Tambah Jamaah') }}</h1>
                 </div>
             </div>
         </div>
@@ -111,31 +87,17 @@
     <div class="content">
         <div class="container-fluid">
             <div class="card" style="border-radius: 8px">
-                <div class="card-body p-0">
-                    <table class="table table-striped" id="myTable">
-                        <thead class="thead-green">
-                            <tr>
-                                <th>Nama</th>
-                                <th>Jumlah Keluarga</th>
-                                <th>Nomor Telepon</th>
-                                <th>Wilayah</th>
-                                <th>Tgl. Daftar</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @forelse ($data as $item)
-                                <tr>
-                                    <td>{{ $item->nama }}</td>
-                                    <td>{{ $item->jabatan }}</td>
-                                    <td>{{ $item->phone }}</td>
-                                </tr>
-                            @empty
-                                <tr>
-                                    <td colspan="3" class="text-center">Tidak Ada Data Tersedia</td>
-                                </tr>
-                            @endforelse
-                        </tbody>
-                    </table>
+                <div class="card-body">
+                    <form class="row" action="" method="">
+                        @csrf
+                        @method('POST')
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="exampleInputBorder">Nama Kepala Keluarga</label>
+                                <input type="text" class="form-control form-control-border" id="exampleInputBorder">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

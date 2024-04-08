@@ -3,7 +3,7 @@
 
 <head>
     <script language='JavaScript'>
-        var txt = "Musholla Al Muhajirin - ISIM Terpadu | ";
+        var txt = "MMI - Al Muhajirin Pondok Indah IV |";
         var speed = 500;
         var refresh = null;
 
@@ -17,7 +17,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Musholla Al Muhajirin - ISIM Terpadu</title>
+    <title>Musholla Al Muhajirin - MMI</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- Google Font: Source Sans Pro -->

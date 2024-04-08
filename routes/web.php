@@ -1,7 +1,13 @@
 <?php
 
-use App\Http\Controllers\AcaraController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\AcaraController;
+use App\Http\Controllers\JamaahController;
+use App\Http\Controllers\ProfileController;
+use App\Models\Member;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +32,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::view('about', 'about')->name('about');
 
     Route::get('users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
+    Route::resource('jamaah', JamaahController::class);
     Route::resource('acara', AcaraController::class);
 
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');

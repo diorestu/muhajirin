@@ -13,8 +13,8 @@
         <form action="{{ route('login') }}" method="post">
             @csrf
             <div class="input-group mb-3">
-                <input type="text" name="email" class="form-control @error('email') is-invalid @enderror"
-                    placeholder="{{ __('Email') }}" required autofocus>
+                <input type="text" name="username" class="form-control @error('username') is-invalid @enderror"
+                    placeholder="{{ __('Nama Pengguna') }}" required autofocus>
                 <div class="input-group-prepend">
                     <div class="input-group-text">
                         <span class="fas fa-user"></span>
