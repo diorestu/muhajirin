@@ -13,6 +13,18 @@ return new class extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
+            $table->integer('id_kk')->unsigned()->nullable();
+            $table->string('nkk', 16)->nullable();
+            $table->string('nik', 16)->nullable();
+            $table->string('nama', 100);
+            $table->text('alamat')->nullable();
+            $table->text('wilayah')->nullable();
+            $table->date('tgl_lahir')->nullable();
+            $table->enum('gender', ['P', 'W']);
+            $table->string('hubungan_keluarga', 100);
+            $table->enum('st_keuangan', ['Cukup Mampu', 'Fakir Miskin']);
+            $table->enum('st_yatim', ['Yatim', 'Piatu', 'Yatim Piatu']);
+            $table->date('rkm_registered')->nullable();
             $table->timestamps();
         });
     }

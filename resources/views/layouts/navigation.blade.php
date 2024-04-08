@@ -3,7 +3,8 @@
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="info">
-            <a href="{{ route('profile.show') }}" class="d-block">{{ Auth::user()->name }}</a>
+            <a href="{{ route('profile.show') }}" class="d-block font-weight-bolder">{{ Auth::user()->nama }}</a>
+            <small class="text-muted">{{ Auth::user()->jabatan }}</small>
         </div>
     </div>
 
@@ -18,11 +19,14 @@
                     </p>
                 </a>
             </li>
-
-
-
-
-
+            <li class="nav-item">
+                <a href="{{ route('home') }}" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>
+                        {{ __('Jamaah') }}
+                    </p>
+                </a>
+            </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-calendar nav-icon"></i>

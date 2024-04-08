@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Member extends Model
+class IuranKifayah extends Model
 {
-    protected $guarded = ['id'];
-}
+    protected $table = 'rkm_iuran';
+    protected $guarded = ['id'];}

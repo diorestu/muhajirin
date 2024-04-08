@@ -21,14 +21,14 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logo.png') }}">
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Figtree:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
     <style>
         body {
-            font-family: 'Figtree', 'Source Sans Pro', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
     </style>
     @yield('styles')
@@ -51,7 +51,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
-                        {{ Auth::user()->name }}
+                        {{ Auth::user()->nama }}
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" style="left: inherit; right: 0px;">
                         <a href="{{ route('profile.show') }}" class="dropdown-item">
@@ -77,8 +77,8 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="/" class="brand-link">
-                <img src="{{ asset('images/AdminLTELogo.png') }}" alt="AdminLTE Logo"
-                    class="brand-image img-circle elevation-3" style="opacity: .8">
+                <img src="{{ asset('images/logo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                    style="opacity: .8">
                 <span class="brand-text font-weight-light">Muhajirin</span>
             </a>
 
@@ -105,11 +105,10 @@
         <footer class="main-footer">
             <!-- To the right -->
             <div class="float-right d-none d-sm-inline">
-                Anything you want
+                Jalan Pondok Indah IV Denpasar Utara, Bali
             </div>
             <!-- Default to the left -->
-            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
-            reserved.
+            <strong>Hak Cipta &copy; Musholla Al Muhajirin</a>.</strong>
         </footer>
     </div>
     <!-- ./wrapper -->

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->time('jam')->nullable();
             $table->mediumText('deskripsi')->nullable();
             $table->string('pj', 100)->nullable();
-            $table->string('penerima', 100)->nullable();
+            $table->text('fasilitas', 100)->nullable();
             $table->timestamps();
         });
     }
